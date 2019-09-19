@@ -34,7 +34,7 @@ Using Twitter, we looked at social media posts made in the vicinity of our top 1
 
 ### Correlation Analysis
 To find out the top three most important factors in the happiness metric, we performed correlation analysis of its components. First, we converted the data to a numeric matrix and created the correlation matrix. After plotting the matrix and using Pearson correlation, we were able to determine that happiness points correlate the closest to income (.798), employment (.696) and healthcare (.661). As income, employment or healthcare increase, “happiness” also increases. It is interesting that while population is given a value of 9 points, its correlation is near zero.
-![Correlation](../master/correlation.PNG)
+![Correlation](../master/correlation.png)
 
 ### Packages Used
 We made extensive use of the data.table package, ggplot and related packages, tidyverse packages, and twitteR and wordcloud. Data.table acts as an extension to the default data.frame class, the fact that it can be treated as a data.frame, while having additional functionality was great. Specifically, being able to store our zips data as a numeric vector, in a column in our table, was helpful. Ggplot was used for our correlation chart an our map, with the addition of ggrepel for clean labeling of our map points.
